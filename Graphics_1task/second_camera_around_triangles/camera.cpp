@@ -105,10 +105,10 @@ int main(void)
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		float X_position = 2.5f * sin(2.0f * glfwGetTime());
-		float Y_position = 2.5f * cos(2.0f * glfwGetTime());
+		float Z_position = 2.5f * cos(2.0f * glfwGetTime());
 
 		View = glm::lookAt(
-			glm::vec3(X_position, 1, Y_position), // Camera is at (4,3,3), in World Space
+			glm::vec3(X_position, 1, Z_position), // Camera is at (4,3,3), in World Space
 			glm::vec3(0, 0, 0), // and looks at the origin
 			glm::vec3(0, 1, 0)  // Head is up (set to 0,-1,0 to look upside-down)
 		);
